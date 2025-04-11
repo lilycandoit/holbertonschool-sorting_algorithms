@@ -6,7 +6,7 @@
  * swap - swap 2 nodes in a doubly linked list
  * @list: double pointer to the head of the list
  * @node1: pointer to first node
- * @node1: pointer to second node
+ * @node2: pointer to second node
  */
 
 void swap(listint_t **list, listint_t *node1, listint_t *node2)
