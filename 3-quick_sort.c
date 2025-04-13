@@ -21,7 +21,7 @@ void swap(int *a, int *b)
  * @array: pointer to the checking array
  * @low: starting index of the subarray
  * @high: ending index of the subarray (pivot)
- * size: the number of elements in the array
+ * @size: the number of elements in the array
  * Return: void
  */
 
@@ -29,6 +29,7 @@ size_t lomuto_partition(int *array, size_t low, size_t high, size_t size)
 {
 	int pivot = array[high];
 	size_t i, j;
+
 	i = low;
 
 	for (j = low; j < high; j++)
@@ -42,7 +43,7 @@ size_t lomuto_partition(int *array, size_t low, size_t high, size_t size)
 			}
 			i++;
 		}
-	
+
 	}
 
 	if (i != high && array[i] != array[high])
@@ -51,7 +52,7 @@ size_t lomuto_partition(int *array, size_t low, size_t high, size_t size)
 		print_array(array, size);
 	}
 
-	return i;
+	return (i);
 }
 
 /**
