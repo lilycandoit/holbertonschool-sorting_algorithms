@@ -45,7 +45,7 @@ size_t lomuto_partition(int *array, size_t low, size_t high, size_t size)
 	
 	}
 
-	if (i != high)
+	if (i != high && array[i] != array[high])
 	{
 		swap(&array[i], &array[high]);
 		print_array(array, size);
